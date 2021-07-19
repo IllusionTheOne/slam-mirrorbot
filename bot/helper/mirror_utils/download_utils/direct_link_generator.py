@@ -87,8 +87,6 @@ def direct_link_generator(link: str):
         return streamtape(link)
     elif 'bayfiles.com' in link:
         return anonfiles(link)
-    elif 'racaty.net' in link:
-        return racaty(link)
     else:
         raise DirectDownloadLinkException(f'No Direct link function found for {link}')
 
